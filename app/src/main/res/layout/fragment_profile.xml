@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Avatar -->
+        <ImageView
+            android:id="@+id/profile_avatar1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatarprofile"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/circle_bg"
+            android:padding="8dp"
+            android:scaleType="centerCrop" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/profile_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Phone Number -->
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/profile_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="robi123@gmail.com"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Favourite -->
+        <LinearLayout
+            android:id="@+id/layout_favourite"
+            style="@style/ProfileOptionStyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_favorite"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Favourite" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+        <!-- Recipe Manage (chỉ hiện với chef) -->
+        <LinearLayout
+            android:id="@+id/layout_recipe_manage"
+            style="@style/ProfileOptionStyle"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_recipe"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Recipe Manage" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+
+        <!-- Ingredient Manage (chỉ hiện với chef) -->
+        <LinearLayout
+            android:id="@+id/layout_ingredient_manage"
+            style="@style/ProfileOptionStyle"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_ingredient"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Ingredient Manage" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+
+
+        <!-- Delete Account -->
+        <LinearLayout
+            android:id="@+id/layout_delete_account"
+            style="@style/ProfileOptionStyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Delete Account" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+
+        <!-- Settings -->
+        <LinearLayout
+            android:id="@+id/layout_settings"
+            style="@style/ProfileOptionStyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_settings"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Settings" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+
+        <!-- Log out -->
+        <LinearLayout
+            android:id="@+id/layout_logout"
+            style="@style/ProfileOptionStyle"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"
+                android:tint="#F28C6F"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                style="@style/ProfileOptionText"
+                android:text="Log Out" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="#B0B0B0" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

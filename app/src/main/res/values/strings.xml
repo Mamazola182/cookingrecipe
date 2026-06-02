@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CookingApp</string>
+    <string name="recipe_image">Recipe image</string>
+    <string name="time_icon">Time icon</string>
+    <string name="servings_icon">Servings icon</string>
+    <string name="difficulty_icon">Difficulty icon</string>
+    <string name="calories_icon">Calories icon</string>
+    <string name="favorite_button">Favorite button</string>
+    <string name="share_button">Share button</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="ingredients">Nguyên liệu</string>
+    <string name="instructions">Cách làm</string>
+    <string name="add_to_cart">Thêm vào giỏ</string>
+    <string name="start_cooking">Bắt đầu nấu</string>
+</resources>
